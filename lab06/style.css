@@ -1,0 +1,12 @@
+h1, p {color:darkviolet;
+    font-size: 80%;
+    font-family:Courier New, Helvetica, sans-serif;
+    }
+
+    h2 {color:darkviolet;
+        font-size: 180%;
+        font-family:Courier New, Helvetica, sans-serif;
+        }
+
+.evenrow {background-color: #e2e2e2;}
+    
