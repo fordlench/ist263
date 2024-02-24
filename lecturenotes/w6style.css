@@ -1,0 +1,20 @@
+/* grouped selector, will style all h1's and p's */
+
+h1, p {color:darkviolet;
+font-size: 80%;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* p {color:rgb(29, 75, 75);}
+This is our basic element selector every p on the page gets styled 
+*/
+
+/* this styles a inside of a p tag 
+its called a descendant selector */
+p a {color:darkseagreen;}
+
+/* this stlyes the id */
+#secondparagraph {color:chartreuse}
+
+/* this styles a class */
+.purpletext {color:purple}
