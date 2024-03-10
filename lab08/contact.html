@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylelab08.css" />
+    <style>
+      .copyright {
+        float: left;
+      }
+
+      .quote {
+        float: right;
+      }
+      .row {
+            display: flex;
+            margin-bottom: 20px;
+            width: 50%;
+            
+        }
+        .column {
+            flex: 1; 
+            margin-right: 10px;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border-radius: 16px;
+            
+        }
+        .column:last-child {
+            margin-right: 0;
+            
+        }
+       
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <img src="Photoshop-lab08.png" alt="Banner Image" />
+    </header>
+  </body>
+  <main>
+    <div class="row">
+      <div class="column">
+        <h1>Contact</h1>
+        <h3>Syracuse Uninversity</h3>
+        <h3>Theory Syracuse</h3>
+        <h3>919 E Genesee St, Syracuse, NY 13210</h3>
+      </div>
+
+      <div class="column">
+        <a href="mailto:fjlenchn@syr.edu">fjlenchn@syr.edu</a>
+        <h2>
+          <img src="logo-sized.png" alt />
+          <a href="https://www.linkedin.com/in/fordlenchner/"
+            >My Linkedin Profile</a
+          >
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Your Name</h2>
+            <input placeholder="insert name here">
+
+            <h2>Reason For Contact</h2>
+            <input type="radio" id="hangout" name="hangout" value="hangout">
+            <label for="hangout">To hangout</label><br>
+
+            <input type="radio" id="homework" name="homework" value="homework">
+            <label for="homework">Homework question</label><br>
+
+            <input type="radio" id="superhero" name="superhero" value="superhero">
+            <label for="superhero">Superhero question</label><br>
+
+            <h2>Message to Ford</h2>
+            <label for="comments">Message:</label><br>
+            <textarea id="comments" name="comments" rows="3" col="60"></textarea><br>
+            
+            <input type="submit" value="Send">
+        </div>
+
+        <div class="column">
+        <h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.735735200549!2d-76.13959358811415!3d43.046991391306776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a69a49fbbf%3A0xd40b95247ee9bf56!2sTheory%20Syracuse!5e0!3m2!1sen!2sus!4v1706805536483!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </h2>
+
+        </div>
+       
+    </div>
+    
+  </main>
+  <footer>
+    <p class="copyright">&copy; Copyright 2024 Syracuse University</p>
+    <p class="quote">
+      Sometimes life is like this dark tunnel. You can't always see the light at
+      the end of the tunnel, but if you just keep moving... you will come to a
+      better place. - Uncle Iroh
+    </p>
+  </footer>
+</html>
