@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Development</title>
+    <link rel="stylesheet" href="stylelab010.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        h2 {
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+        }
+        .other-skills {
+            flex: 1;
+            background-color: #1b2471;
+            color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .other-skills h2 {
+            color: #ffffff;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 3;
+        }
+        p {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h2>Technical Skills</h2>
+<p>Welcome to my Technical Skills page where I showcase a diverse range of abilities from web development to video editing, highlighting my proficiency in each area. Here's is what I'm good at: making videos pop with After Effects, slicing things up in Final Cut Pro, and some AI.</p>
+
+<div class="flex-container">
+    <div class="skills">
+        <div class="skill">
+            <img src="video-solid.svg" alt="HTML" width="40" height="40"><br>
+            <span class="skill-text">Video editing</span>
+        </div>
+        <div>
+            <img src="code-solid.svg" alt="HTML" width="40" height="40"><br>
+            <span class="skill-text">HTML</span>
+        </div>
+        <div>
+            <img src="robot-solid.svg" alt="HTML" width="40" height="40"><br>
+            <span class="skill-text">A.I.</span>
+        </div>
+        <div>
+            <img src="python.svg" alt="HTML" width="40" height="40"><br>
+            <span class="skill-text">Python</span>
+        </div>
+        <div>
+            <img src="figma.svg" alt="HTML" width="40" height="40"><br>
+            <span class="skill-text">HTML</span>
+        </div>
+    </div>
+
+    <div class="other-skills">
+        <h2>Other Skills</h2>
+        <p>Troubleshooting</p>
+        <p>Familiar with both Windows and macOS</p>
+        <p>The inner workings of a PC/parts</p>
+    </div>
+</div>
+
+<form action="https://formspree.io/f/mleqjvvg" method="post"><br></form>
+</body>
+</html>
