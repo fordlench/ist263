@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+          
+        .mainflexbox {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border: 2px solid #3cc0f0;
+            padding: 10px;
+            margin: 10px auto; 
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            height: 70px; 
+        }
+        
+        .logo img {
+            height: auto;
+            width: 100px; /* Adjust as necessary */
+            /* No need for align-items here */
+        }
+
+        /* Styling for the nav links */
+        .nav-links {
+            display: flex; 
+            align-items: flex-end;
+        }
+        
+        nav a {
+            color: #3cc0f0;
+            margin: 0 10px;
+            display: flex; /* Align text of the links in the center if they have different heights */
+            align-items: center; /* Center align text vertically */
+        }
+
+        p { cursor: pointer; }
+
+        .box{
+        width: auto;
+        height: 200px;
+        display: block;
+        background-color: #3cf087;
+        
+
+        }
+
+    .cardio img, .weights img, .recovery img {
+    max-width: 384px; 
+    width: 384px; 
+    height: 216px; 
+    
+    }
+
+        .workoutsection {
+        display: flex;
+        justify-content: space-around;
+       min-width: 600px;
+    }
+    .cardio, .weights, .recovery {
+    display: flex; /* This makes it a flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text alignment */
+}
+    </style>
+</head>
+<body>
+    <nav class="mainflexbox">
+        <div class="logo">
+            <img src="Wellnesswave copy.png" alt="wellnesswave">
+        </div>
+
+        <div class="nav-links">
+            <a href="ProjectDraft.html">Home</a>
+            <a href="Notes.html">Notes</a>
+            <a href="Profile.html">Profile</a>
+        </div>
+    </nav> 
+
+    <p class="box">Placeholder</p>
+
+<div class="workoutsection">
+
+    <div class="cardio">
+        <h1>Cardio</h1>
+        <img src="treadmill1080.png">
+        <p><h3>Treadmill Warm-Up Exercise Setting:</h3><br>
+        Incline at 10-15 <br>
+        Pace: Speed at 2-3 MPH</p>
+    </div>
+
+    <div class="weights">
+        <h1>Weights</h1>
+        <img src="weights1080.jpg">
+        <p><h3>Weights</h3><br>
+            Barbell Squat<br>
+            4x4<br>
+                <br>
+            Overhead Press<br>
+            4x4<br>
+                <br>
+            Barbell Deadlift<br>
+            2x4<br>
+                <br>
+            Barbell Rows<br>
+            2x6<br>
+                <br>
+
+    </div>
+
+    <div class="recovery">
+        <h1>Recovery</h1>
+        <img src="Recovery.jpg">
+        <p><h3>Stretching</h3><br>
+            
+            Quads Stretch<br>
+            2x30 seconds each leg<br>
+                <br>
+            Hamstring Stretch<br>
+            2x30 seconds each leg<br>
+                <br>
+            Glute and Piriformis Stretch<br>
+            2x30 seconds each side<br>
+                <br>
+            Calf Stretch<br>
+            2x30 seconds each leg<br>
+                <br>
+            Upper Back and Shoulder Stretch<br>
+            2x30 seconds<br>
+                <br>
+                <br>
+       <strong>Massage:</strong><br>
+            Foam Roller on Quads<br>
+            2 minutes each leg<br>
+                <br>
+            Foam Roller on Hamstrings<br>
+            2 minutes each leg<br>
+                <br>
+            Foam Roller on Calves<br>
+            2 minutes each leg<br>
+                <br>
+            Lacrosse Ball on Glutes<br>
+            2 minutes each side<br>
+                <br>
+            </p>   
+    </div>
+
+</div>
+
+ 
+</body>
+</html>
