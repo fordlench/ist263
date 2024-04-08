@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5</title>
     <style>
-  body {
+ body {
   font-family: Arial, sans-serif;
 }
 
@@ -20,55 +20,69 @@
   background-color: #f0f0f0;
   height: 70px; 
 }
-        
-        .logo img {
-            height: auto;
-            width: 100px;
-            
-        }
 
-       
-        .nav-links {
-            display: flex; 
-            align-items: flex-end;
-        }
-        
-        nav a {
-            color: #3c6cf0;
-            margin: 0 10px;
-            display: flex; 
-            align-items: center; 
-        }
-
-        p { cursor: pointer; }
-
-        .box{
-        width: auto;
-        height: 200px;
-        display: block;
-        background-color: #3cf087;
-        
-
-        }
-
-    .cardio img, .weights img, .recovery img {
-    max-width: 384px; 
-    width: 384px; 
-    height: 216px; 
-    
-    }
-
-        .workoutsection {
-        display: flex;
-        justify-content: space-around;
-       min-width: 600px;
-    }
-    .cardio, .weights, .recovery {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+.logo img {
+  height: auto;
+  width: 80px; /* Smaller logo for all screen sizes */   
 }
+
+.nav-links {
+  display: flex; 
+  align-items: flex-end;
+}
+
+nav a {
+  color: #3c6cf0;
+  margin: 0 10px;
+  display: flex; 
+  align-items: center; 
+}
+
+p { 
+  cursor: pointer; 
+}
+
+.box {
+  width: auto;
+  height: 200px;
+  display: block;
+  background-color: #3cf087;
+}
+
+.cardio img, .weights img, .recovery img {
+  max-width: 100%; 
+  width: auto; 
+  height: auto; 
+}
+
+.workoutsection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardio, .weights, .recovery {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  margin: 10px; 
+  border: 2px solid #3cc0f0; 
+  padding: 10px; 
+  border-radius: 10px; 
+  width: 300px; 
+}
+
+@media only screen and (max-width: 800px) {
+  .workoutsection {
+    flex-direction: column; /* Stacks sections vertically on small screens */
+  }
+
+  .cardio, .weights, .recovery {
+    width: auto; /* Allows sections to adjust width on small screens */
+  }
+}
+
     </style>
 </head>
 <body>
