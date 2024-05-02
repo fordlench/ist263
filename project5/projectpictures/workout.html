@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+ body {
+  font-family: Arial, sans-serif;
+}
+
+.workoutsection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url('bodybuilding.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding: 20px; /* Optional: Adds some padding around the content */
+}
+
+.generalhealth {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url('generalhealth.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding: 20px; /* Optional: Adds some padding around the content */
+}
+
+.athletic {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url('athlete.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding: 20px; /* Optional: Adds some padding around the content */
+}
+
+.mainflexbox {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  border: 2px solid #3cc0f0;
+  padding: 10px;
+  margin: 10px auto; 
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  height: 70px; 
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
+}
+
+.nav-links {
+  display: flex; 
+  align-items: flex-end;
+}
+
+nav a {
+  color: #3c6cf0;
+  margin: 0 10px;
+  display: flex; 
+  align-items: center; 
+}
+
+p { 
+  cursor: pointer; 
+}
+
+.box {
+  width: auto;
+  height: 200px;
+  display: block;
+  background-color: #3cf087;
+}
+
+.cardio img, .weights img, .recovery img {
+  max-width: 100%; 
+  width: auto; 
+  height: auto; 
+}
+
+.workoutsection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cardio, .weights, .recovery {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  margin: 10px; 
+  border: 2px solid #3cc0f0; 
+  padding: 10px; 
+  border-radius: 10px; 
+  width: 300px; 
+}
+
+@media only screen and (max-width: 800px) {
+  .workoutsection {
+    flex-direction: column; /* Stacks sections vertically on small screens */
+  }
+
+  .cardio, .weights, .recovery {
+    width: auto; /* Allows sections to adjust width on small screens */
+  }
+}
+
+
+iframe {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    border: 0;
+    overflow: hidden;
+    display: block;
+}
+.section-title {
+    text-align: center;
+}
+
+
+.cardio, .weights, .recovery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #3cc0f0; /* maintains the blue border */
+    background-color: #ffffff;
+  }
+    </style>
+</head>
+<body>
+  
+    <nav class="mainflexbox">
+        <div class="logo">
+            <img src="Wellnesswave-copy.png" alt="wellnesswave">
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="workout.html">Workout</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+<br>    
+<h1 class="section-title" id="bodybuilding-section">Bodybuilding</h1>
+<div class="workoutsection">
+    <!-- Bodybuilding content -->
+    <div class="cardio">
+        <h1>Cardio</h1>
+        <img src="treadmill1080.png" alt="Treadmill">
+        <h3>Treadmill Warm-Up Exercise Setting:</h3><br>
+        <p>Incline at 10-15 <br>Pace: Speed at 2-3 MPH</p>
+    </div>
+    <div class="weights">
+        <h1>Weights</h1>
+        <img src="weights1080.jpg" alt="Weights Exercise">
+        <h3>Weights</h3>
+        <p>Barbell Squat<br>4x4<br><br>
+           Overhead Press<br>4x4<br><br>
+           Barbell Deadlift<br>2x4<br><br>
+           Barbell Rows<br>2x6</p>
+    </div>
+    <div class="recovery">
+        <h1>Recovery</h1>
+        <img src="Recovery.jpg" alt="Recovery Exercise">
+        <h3>Stretching</h3>
+        <p>Quads Stretch<br>2x30 seconds each leg<br><br>
+           Hamstring Stretch<br>2x30 seconds each leg<br><br>
+           Glute and Piriformis Stretch<br>2x30 seconds each side<br><br>
+           Calf Stretch<br>2x30 seconds each leg<br><br>
+           Upper Back and Shoulder Stretch<br>2x30 seconds</p>
+    </div>
+</div>
+<br>
+
+
+<h1 class="section-title" id="general-health-section">General Health</h1>
+<div class="generalhealth">
+  <!--General Health-->
+    <div class="cardio">
+        <h1>Cardio</h1>
+        <img src="treadmill1080.png" alt="Treadmill">
+        <h3>Treadmill Warm-Up Exercise Setting:</h3><br>
+        <p>Incline at 10-15 <br>Pace: Speed at 2-3 MPH</p>
+    </div>
+    <div class="weights">
+        <h1>Weights</h1>
+        <img src="weights1080.jpg" alt="Weights Exercise">
+        <h3>Weights</h3>
+        <p>Barbell Squat<br>4x4<br><br>
+           Overhead Press<br>4x4<br><br>
+           Barbell Deadlift<br>2x4<br><br>
+           Barbell Rows<br>2x6</p>
+    </div>
+    <div class="recovery">
+        <h1>Recovery</h1>
+        <img src="Recovery.jpg" alt="Recovery Exercise">
+        <h3>Stretching</h3>
+        <p>Quads Stretch<br>2x30 seconds each leg<br><br>
+           Hamstring Stretch<br>2x30 seconds each leg<br><br>
+           Glute and Piriformis Stretch<br>2x30 seconds each side<br><br>
+           Calf Stretch<br>2x30 seconds each leg<br><br>
+           Upper Back and Shoulder Stretch<br>2x30 seconds</p>
+    </div>
+</div>
+<br>
+
+<h1 class="section-title" id="athletic-section">Athletic</h1>
+<div class="athletic">
+  <!--Athletic -->
+    <div class="cardio">
+        <h1>Cardio</h1>
+        <img src="treadmill1080.png" alt="Treadmill">
+        <h3>Treadmill Warm-Up Exercise Setting:</h3><br>
+        <p>Incline at 10-15 <br>Pace: Speed at 2-3 MPH</p>
+    </div>
+    <div class="weights">
+        <h1>Weights</h1>
+        <img src="weights1080.jpg" alt="Weights Exercise">
+        <h3>Weights</h3>
+        <p>Barbell Squat<br>4x4<br><br>
+           Overhead Press<br>4x4<br><br>
+           Barbell Deadlift<br>2x4<br><br>
+           Barbell Rows<br>2x6</p>
+    </div>
+    <div class="recovery">
+        <h1>Recovery</h1>
+        <img src="Recovery.jpg" alt="Recovery Exercise">
+        <h3>Stretching</h3>
+        <p>Quads Stretch<br>2x30 seconds each leg<br><br>
+           Hamstring Stretch<br>2x30 seconds each leg<br><br>
+           Glute and Piriformis Stretch<br>2x30 seconds each side<br><br>
+           Calf Stretch<br>2x30 seconds each leg<br><br>
+           Upper Back and Shoulder Stretch<br>2x30 seconds</p>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,17 @@
   background-color: #f0f0f0;
   height: 70px; 
 }
-
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: #ffffff;
+}
+h2 {
+  color: #ffffff;
+}
 .logo img {
   height: auto;
   width: 100px;
@@ -83,59 +94,114 @@ p {
   }
 }
 
+.calendar-container {
+    width: 100%;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+iframe {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    border: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.workout-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.workout-card {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.workout-card img {
+    width: 100%;
+    height: auto;
+}
+
+.workout-card h2 {
+    color: #ffffff;
+}
+
+.workout-card p {
+    padding: 0 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    width: 90%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
     </style>
 </head>
 <body>
+  
     <nav class="mainflexbox">
         <div class="logo">
             <img src="Wellnesswave-copy.png" alt="wellnesswave">
         </div>
         <div class="nav-links">
             <a href="home.html">Home</a>
-            <a href="notes.html">Notes</a>
+            <a href="workout.html">Workout</a>
             <a href="profile.html">Profile</a>
         </div>
     </nav>
 
-    <p class="box">Placeholder</p>
+    
 
-<div class="workoutsection">
-
-    <div class="cardio">
-        <h1>Cardio</h1>
-        <img src="treadmill1080.png" alt="Treadmill">
-        <h3>Treadmill Warm-Up Exercise Setting:</h3><br>
-        <p>Incline at 10-15 <br>
-        Pace: Speed at 2-3 MPH</p>
-    </div>
-
-    <div class="weights">
-        <h1>Weights</h1>
-        <img src="weights1080.jpg" alt="Weights Exercise">
-        <h3>Weights</h3>
-        <p>Barbell Squat<br>4x4<br><br>
-           Overhead Press<br>4x4<br><br>
-           Barbell Deadlift<br>2x4<br><br>
-           Barbell Rows<br>2x6</p>
-    </div>
-
-    <div class="recovery">
-    <h1>Recovery</h1>
-    <img src="Recovery.jpg" alt="Recovery Exercise">
-    <h3>Stretching</h3>
-    <p>Quads Stretch<br>2x30 seconds each leg<br><br>
-       Hamstring Stretch<br>2x30 seconds each leg<br><br>
-       Glute and Piriformis Stretch<br>2x30 seconds each side<br><br>
-       Calf Stretch<br>2x30 seconds each leg<br><br>
-       Upper Back and Shoulder Stretch<br>2x30 seconds<br><br>
-       <strong>Massage:</strong><br>
-       Foam Roller on Quads<br>2 minutes each leg<br><br>
-       Foam Roller on Hamstrings<br>2 minutes each leg<br><br>
-       Foam Roller on Calves<br>2 minutes each leg</p>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home - Workout Choices</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  
+  
+      <div class="workout-options">
+<!-- Bodybuilding Training -->
+<div class="workout-card">
+  <img src="bodybuilding1080.jpg" alt="Bodybuilding Training">
+  <h2>Bodybuilding Training Style</h2>
+  <p>Focus on muscle growth and sculpting. Ideal for those looking to increase muscle size and aesthetic appeal.</p>
+  <button onclick="location.href='workout.html#bodybuilding-section'">Click here</button>
 </div>
 
+<!-- General Fitness Training -->
+<div class="workout-card">
+  <img src="Generalhealth1080.jpg" alt="General Fitness Training">
+  <h2>General Fitness Training Style</h2>
+  <p>Perfect for maintaining overall health and fitness, incorporating a balanced mix of cardio, strength, and flexibility exercises.</p>
+  <button onclick="location.href='workout.html#general-health-section'">Click here</button>
 </div>
 
- 
-</body>
-</html>
+<!-- Athletic Training -->
+<div class="workout-card">
+  <img src="Athletic1080.jpg" alt="Athletic Training">
+  <h2>Athletic Training Style</h2>
+  <p>Designed to enhance athletic performance, focusing on agility, speed, and endurance.</p>
+  <button onclick="location.href='workout.html#athletic-section'">Click here</button>
+</div>
+
+  
+      
+  </body>
+  </html>
