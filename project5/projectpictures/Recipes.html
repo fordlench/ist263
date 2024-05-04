@@ -1,88 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wellness Wave</title>
-<style>
-  body {
-  font-family: Arial, sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000000;
+            margin: 0; /* Remove default body margin */
+            background-color: #f4f9f9;
+        }
+
+        .mainflexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #3cc0f0;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    height: 70px; 
+    width: 96%;
 }
 
-.mainflexbox {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
-  border: 2px solid #3cc0f0;
-  padding: 10px;
-  margin: 10px auto; 
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  height: 70px; 
-}
+        .logo img {
+            height: auto;
+            width: 100px;
+        }
 
-.logo img {
-  height: auto;
-  width: 100px;
-}
-
-.nav-links {
-  display: flex; 
-  align-items: flex-end;
+       .nav-links {
+    display: flex; 
+    align-items: flex-end;
 }
 
 nav a {
-  color: #3c6cf0;
-  margin: 0 10px;
-  display: flex; 
-  align-items: center; 
+    color: #3c6cf0;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
-.container {
-  padding: 20px;
-}
-.account-settings {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-.profile-picture {
-  width: 100px;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.content-block {
-  display: flex;
-  margin-bottom: 20px;
-}
-.content-block img {
-  max-width: 100%;
-  margin-right: 20px;
-}
-.content-block p {
-  flex-grow: 1;
-}
-.footer {
-  border-top: 1px solid #ddd;
-  padding: 10px;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-</style>
+        header {
+            background-color: #3fa9f5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .recipe {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 80%;
+        }
+
+        .text-section {
+            width: 60%;
+        }
+
+        .image-section {
+            width: 35%;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .macro {
+            font-weight: bold;
+            color: #333;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="mainflexbox">
-        <div class="logo">
-            <img src="Wellnesswave-copy.png" alt="wellnesswave">
+<nav class="mainflexbox">
+    <div class="logo">
+        <img src="Wellnesswave-copy.png" alt="wellnesswave">
+    </div>
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="workout.html">Workout</a>
+        <a href="Recipes.html">Recipes</a>
+    </div>
+</nav>
+
+<header>
+  <h1>Healthy Recipes for Post Workout</h1>
+</header>
+
+
+
+
+
+  <div class="container">
+
+    <div class="My personal recipe">
+      <div class="text-section">
+          <h2>Personal Favorite: Chicken Bowl</h2>
+          <p>Ingredients: 110 grams of cooked chicken breast, 20 grams of chunky salsa by Tostitos, 12 grams of Sargento® Shredded Reduced Fat 4 Cheese Mexican Natural Cheese, a small amount of mayonnaise.</p>
+          <p class="macro">Calories: 209 | Protein: 35.2g | Carbs: 1g | Fat: 6.6g</p>
+      </div>
+      <div class="image-section">
+          <img src="placeholder.jpg" alt="Chicken Breast with Salsa">
+      </div>
+  </div>
+  
+    <!-- Recipe 1 -->
+    <div class="recipe">
+        <div class="text-section">
+            <h2>Cottage Cheese Salad</h2>
+            <p>Ingredients: 1 cup of cottage cheese, diced tomatoes, cucumbers, red onion, avocado, chopped Greek olives, dill, oregano, crumbled feta, everything bagel seasoning, a drizzle of olive oil.</p>
+            <p class="macro">Calories: 350 | Protein: 20g | Carbs: 15g | Fat: 22g</p>
         </div>
-        <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="workout.html">Workout</a>
-            <a href="Recipes.html">Recipes</a>
+        <div class="image-section">
+            <img src="cottagecheesesalad.jpg" alt="Cottage Cheese Salad">
         </div>
-    </nav>
-    
- 
-    </body>
+    </div>
+    <!-- Recipe 2 -->
+    <div class="recipe">
+        <div class="text-section">
+            <h2>Healthy Turkey Club Sandwich</h2>
+            <p>Ingredients: 2 slices of uncured turkey bacon, 2 slices of whole grain bread (70 cal each), toast it for a minute, half a serving of light mayo, 1.5 oz of turkey, 1 slice of low calorie cheese, half a serving of light honey mustard, another 1.5 oz of turkey.</p>
+            <p class="macro">Calories: 450 | Protein: 35g | Carbs: 35g | Fat: 18g</p>
+        </div>
+        <div class="image-section">
+            <img src="clubsandwich.jpg" alt="Turkey Bacon and Turkey Sandwich">
+        </div>
+    </div>
+    <!-- Recipe 3 -->
+    <div class="recipe">
+        <div class="text-section">
+            <h2>Low Calorie Chicken Noodle Soup</h2>
+            <p>Ingredients: Wegmans 130 calorie chicken noodle soup (low calorie).</p>
+            <p class="macro">Calories: 130 | Protein: 10g | Carbs: 14g | Fat: 4g</p>
+        </div>
+        <div class="image-section">
+            <img src="soup.png" alt="Chicken Noodle Soup">
+        </div>
+    </div>
+    <!-- Recipe 4 -->
+    <div class="recipe">
+        <div class="text-section">
+            <h2>Burger Bowl</h2>
+            <p>Ingredients: 125 grams of beef mince, 223 grams of baby potatoes, 14 ml burger sauce, 10g lighter cheese, shredded lettuce, white onion, tomatoes, seasoned with salt, pepper, paprika, garlic.</p>
+            <p class="macro">Calories: 600 | Protein: 30g | Carbs: 50g | Fat: 30g</p>
+        </div>
+        <div class="image-section">
+            <img src="burgerbowl.jpg" alt="Burger Bowl">
+        </div>
+    </div>
+</div>
+
+
+</body>
 </html>
