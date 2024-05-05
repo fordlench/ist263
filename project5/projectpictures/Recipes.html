@@ -5,104 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #000000;
-            margin: 0; /* Remove default body margin */
-            background-color: #f4f9f9;
-        }
-
-        .mainflexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #3cc0f0;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    height: 70px; 
-    width: 96%;
-}
-
-        .logo img {
-            height: auto;
-            width: 100px;
-        }
-
-       .nav-links {
-    display: flex; 
-    align-items: flex-end;
-}
-
-nav a {
-    color: #3c6cf0;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    font-size: 16px; 
-    line-height: 1.5; 
-}
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        header {
-            background-color: #3fa9f5;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .recipe {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            width: 80%;
-        }
-
-        .text-section {
-            width: 60%;
-        }
-
-        .image-section {
-            width: 35%;
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .macro {
-            font-weight: bold;
-            color: #333;
-            padding-top: 10px;
-        }
-    </style>
+      body {
+          font-family: Arial, sans-serif;
+          color: #000000;
+          margin: 0; /* Remove default body margin */
+          background-color: #f4f9f9;
+      }
+      .mainflexbox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 2px solid #3cc0f0;
+          padding: 10px;
+          margin: 10px auto;
+          border-radius: 5px;
+          background-color: #f0f0f0;
+          height: 70px; 
+          width: 96%;
+      }
+      .logo img {
+          height: auto;
+          width: 100px;
+      }
+      .nav-links {
+          display: flex; 
+          align-items: flex-end;
+      }
+      nav a {
+          color: #3c6cf0;
+          margin: 0 10px;
+          display: flex;
+          align-items: center;
+          font-size: 16px; 
+          line-height: 1.5; 
+      }
+      nav a:hover {
+          text-decoration: underline;
+      }
+      header {
+          background-color: #3fa9f5;
+          color: white;
+          padding: 20px;
+          text-align: center;
+      }
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+      }
+      .recipe {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          width: 80%;
+      }
+      .text-section {
+          width: 60%;
+      }
+      .image-section {
+          width: 35%;
+          text-align: center;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 5px;
+      }
+      h1, h2 {
+          color: #333;
+      }
+      p {
+          color: #666;
+          line-height: 1.6;
+      }
+      .macro {
+          font-weight: bold;
+          color: #333;
+          padding-top: 10px;
+      }
+      .menu-icon {
+          display: none; /* Initially hidden */
+          font-size: 30px; /* Icon size */
+          cursor: pointer;
+          color: #3c6cf0; /* Adjust color as necessary to make it visible */
+      }
+      @media (max-width: 768px) {
+          .nav-links {
+              flex-direction: column;
+              width: 100%;
+              display: none;
+              align-items: center;
+          }
+          .menu-icon {
+              display: block;
+          }
+          .recipe, .text-section, .image-section {
+              width: 100%;
+          }
+          .logo img {
+              width: 100px; /* Keep logo width consistent */
+              margin: 0 auto; /* Center logo if needed */
+          }
+      }
+  </style>
 </head>
 <body>
 
@@ -110,7 +120,12 @@ nav a {
     <div class="logo">
         <img src="Wellnesswave-copy.png" alt="wellnesswave">
     </div>
-    <div class="nav-links">
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; <!-- This is a simple hamburger icon using HTML Unicode -->
+    </div>
+    <!-- Navigation Links -->
+    <div class="nav-links" id="navLinks">
         <a href="home.html">Home</a>
         <a href="workout.html">Workout</a>
         <a href="Recipes.html">Recipes</a>
@@ -118,11 +133,7 @@ nav a {
 </nav>
 
 <header>
-  <h1>Healthy Recipes for Post Workout</h1>
-</header>
-
-
-
+  <h1 style="color: #ffffff;">Healthy Recipes for Post Workout</h1></header>
 
 
   <div class="container">
@@ -184,6 +195,15 @@ nav a {
     </div>
 </div>
 
-
+<script>
+  function toggleMenu() {
+      var navLinks = document.getElementById('navLinks');
+      if (navLinks.style.display === 'block') {
+          navLinks.style.display = 'none';
+      } else {
+          navLinks.style.display = 'block';
+      }
+  }
+  </script>
 </body>
 </html>
