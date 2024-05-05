@@ -12,8 +12,8 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .logo {
@@ -44,12 +44,12 @@ body {
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #000000;
     padding: 1rem;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: #d5d5d5;
 }
 
 .toggle-button {
@@ -66,7 +66,7 @@ body {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: #000000;
     border-radius: 10px;
 }
 
