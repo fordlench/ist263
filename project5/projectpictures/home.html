@@ -5,136 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5</title>
-    <style>
- body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.png'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
-    color: #ffffff;
-    margin: 0; /* Remove default body margin */
-}
+    <link rel="stylesheet" href="home.css">
 
-.mainflexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #3cc0f0;
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    height: 70px; 
-    width: 96%;
-}
-
-
-h2 {
-    color: #ffffff;
-}
-
-.logo img {
-    height: auto;
-    width: 100px;
-}
-
-.nav-links {
-    display: flex; 
-    align-items: flex-end;
-}
-
-nav a {
-    color: #3c6cf0;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    font-size: 16px; 
-    line-height: 1.5; 
-}
-
-
-.workout-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.workout-card {
-    flex-basis: 30%;
-    margin: 10px;
-    text-align: center;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    background-color: #00000080; 
-}
-
-.workout-card img {
-    width: 100%;
-    height: auto;
-}
-
-.workout-card h2,
-.workout-card p {
-    display: block;
-    color: #ffffff; 
-    font-size: 14px; 
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    width: 90%;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-@media only screen and (max-width: 800px) {
-    .workout-card {
-        flex-basis: 100%;
-    }
-
-    .workout-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .workout-card h2,
-    .workout-card p {
-        font-size: 12px; 
-    }
-
-    .workout-card button {
-        position: static; 
-        margin-top: 10px; 
-        width: 80%; 
-    }
-}
-
-
-    </style>
 </head>
 <body>
 
-    <nav class="mainflexbox">
-        <div class="logo">
-            <img src="Wellnesswave-copy.png" alt="wellnesswave">
-        </div>
-        <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="workout.html">Workout</a>
-            <a href="Recipes.html">Recipes</a>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="logo"><img src="Wellnesswave-copy.png" alt="Wellness Wave Logo">Wellness Wave</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+      </ul>
+    </div>
+  </nav>
 
     <h2 style="font-family: 'Times New Roman', Times, serif; text-align: center; color: #defff4;"><strong>How would you like to workout:</strong></h2>
 

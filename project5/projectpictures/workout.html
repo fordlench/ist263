@@ -4,154 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5</title>
-    <style>
- body {
-  font-family: Arial, sans-serif;
-}
+    <link rel="stylesheet" href="workout.css">
 
-.workoutsection {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-image: url('bodybuilding.jpg'); 
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    padding: 20px; 
-}
-
-.generalhealth {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-image: url('Generalhealth.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    padding: 20px; 
-}
- 
-.athletic {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-image: url('athlete.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    padding: 20px; /
-}
-
-.mainflexbox {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
-  border: 2px solid #3cc0f0;
-  padding: 10px;
-  margin: 10px auto; 
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  height: 70px; 
-}
-
-.logo img {
-  height: auto;
-  width: 100px;
-}
-
-.nav-links {
-  display: flex; 
-  align-items: flex-end;
-}
-
-nav a {
-  color: #3c6cf0;
-  margin: 0 10px;
-  display: flex; 
-  align-items: center; 
-}
-
-p { 
-  cursor: pointer; 
-}
-
-.box {
-  width: auto;
-  height: 200px;
-  display: block;
-  background-color: #3cf087;
-}
-
-.cardio img, .weights img, .recovery img {
-  max-width: 100%; 
-  width: auto; 
-  height: auto; 
-}
-
-.workoutsection {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.cardio, .weights, .recovery {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center; 
-  margin: 10px; 
-  border: 2px solid #3cc0f0; 
-  padding: 10px; 
-  border-radius: 10px; 
-  width: 300px; 
-}
-
-@media only screen and (max-width: 800px) {
-  .workoutsection {
-    flex-direction: column; 
-  }
-
-  .cardio, .weights, .recovery {
-    width: auto; 
-  }
-}
-
-
-iframe {
-    width: 100%;
-    height: 600px; 
-    border: 0;
-    overflow: hidden;
-    display: block;
-}
-.section-title {
-    text-align: center;
-}
-
-
-.cardio, .weights, .recovery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-    border: 2px solid #3cc0f0; /* maintains the blue border */
-    background-color: #ffffff;
-  }
-    </style>
 </head>
 <body>
   
-    <nav class="mainflexbox">
-        <div class="logo">
-            <img src="Wellnesswave-copy.png" alt="wellnesswave">
-        </div>
-        <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="workout.html">Workout</a>
-            <a href="Recipes.html">Recipes</a>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="logo"><img src="Wellnesswave-copy.png" alt="Wellness Wave Logo">Wellness Wave</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <br>    
 <h1 class="section-title" id="bodybuilding-section">Bodybuilding</h1>
