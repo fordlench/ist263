@@ -90,10 +90,12 @@
 </div> <!-- End of Container -->
 
 <script>
-  function toggleNav() {
-      var dropdownContent = document.querySelector('.dropdown-content');
-      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-  }
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
 </script>
 
 </body>
