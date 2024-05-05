@@ -168,3 +168,18 @@ header {
     text-align: center;
 }
 
+.recipe-text, .recipe-image {
+    width: 100%; /* Use the full width for both text and image */
+}
+
+.recipe-image img {
+    max-width: 100%; /* Ensure the image uses the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+@media (max-width: 800px) {
+    .recipe-card {
+        flex-direction: column; /* Stack the elements vertically */
+    }
+}
